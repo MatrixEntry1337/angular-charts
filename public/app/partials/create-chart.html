@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            
+            <div class="panel panel-info">
+                <div class="panel-heading">Panel heading without title</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" ng-submit="startChartCreation()">
+                        <div class="form-group">
+                            <label for="chartName" class="col-sm-2 control-label">Chart Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="chartName" 
+                                placeholder="Chart Name" autofocus ng-model="chartName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="numData" class="col-md-3 col-sm-3 control-label"># of Data Points</label>
+                            <div class="col-md-3 col-sm-3">
+                                <input type="number" class="form-control" id="numData" 
+                                placeholder="# of Data Points" ng-model="numDataPoints">
+                            </div>
+                            <label for="chartName" class="col-md-3 col-sm-3 control-label">Chart Type</label>
+                            <div class="col-md-3 col-sm-3">
+                                <select class="form-control" placeholder="" ng-model="chartType">
+                                    <option>Line</option>
+                                    <option>Bar</option>
+                                    <option>Radar</option>
+                                    <option>Polar Area</option>
+                                    <option>Pie</option>
+                                    <option>Bubble</option>
+                                    <option>Scales</option>
+                                </select>
+                            </div>
+                        </div><!-- form group -->
+                        <button type="submit" class="btn btn-primary pull-right">Next</button>
+                    </form>
+                </div><!-- .panel-body -->
+            </div><!-- .panel -->
+        </div>
+    </div>
+</div>
