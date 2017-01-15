@@ -1,8 +1,29 @@
+
+/* Nav Charts */
 .logo{
     height: 20px;
     width: auto;
 }
 
+.active{
+    background-color:#5e5f63;
+    border-radius: .15rem;
+}
+
+.nav-charts{
+    background-color: #3946db;
+}
+
+.nav-links{
+    color: #fff;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    color:#fff;
+    background-color: #5e5f63;
+}
+
+/* Jumbotron */
 .jumbo-main{
     background-image: url("/app/assets/images/triangle-bg.png");
     color: #fff;

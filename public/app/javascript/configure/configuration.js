@@ -1,10 +1,11 @@
 angular.module("app").config(function($routeProvider, $locationProvider){
-    $locationProvider.hashPrefix("");
+    // $locationProvider.hashPrefix("");
     
     $routeProvider
         .when("/", {
-        templateUrl : "app/partials/main.html",
-        controller: "chartsCtrl"
-    });
+            templateUrl : "app/partials/main.html",
+            controller: "chartsCtrl"
+        })
+        .otherwise({redirectTo:'/'});
 
 });
