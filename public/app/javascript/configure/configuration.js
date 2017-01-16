@@ -3,11 +3,11 @@ angular.module("app").config(function($routeProvider, $locationProvider){
   
   $routeProvider
     .when("/", {
-        templateUrl : "app/partials/main.html"
+      templateUrl : "app/partials/main.html"
     })
     .when("/create", {
-        templateUrl: "app/partials/create-chart.html",
-        controller: "createChartCtrl"
+      templateUrl: "app/partials/create-chart.html",
+      controller: "createChartCtrl"
     })
     .when("/populate-line", {
         templateUrl: "app/partials/populate-line.html",
@@ -22,20 +22,24 @@ angular.module("app").config(function($routeProvider, $locationProvider){
       controller: "populateDoughnutCtrl"
     })
     .when("/populate-radar", {
-        templateUrl: "app/partials/populate-radar.html",
-        controller: "populateRadarCtrl"
+      templateUrl: "app/partials/populate-radar.html",
+      controller: "populateRadarCtrl"
     })
     .when("/populate-polar", {
-        templateUrl: "app/partials/populate-polar.html",
-        controller: "populatePolarCtrl"
+      templateUrl: "app/partials/populate-polar.html",
+      controller: "populatePolarCtrl"
     })
     .when("/populate-pie", {
-        templateUrl: "app/partials/populate-pie.html",
-        controller: "populatePieCtrl"
+      templateUrl: "app/partials/populate-pie.html",
+      controller: "populatePieCtrl"
     })
     .when("/populate-bubble", {
-        templateUrl: "app/partials/populate-bubble.html",
-        controller: "populateBubbleCtrl"
+      templateUrl: "app/partials/populate-bubble.html",
+      controller: "populateBubbleCtrl"
+    })
+    .when("/view-line-chart", {
+      templateUrl: "app/partials/view-line-chart.html",
+      controller: "viewLineCtrl"
     })
     .otherwise({redirectTo:'/'});
 
