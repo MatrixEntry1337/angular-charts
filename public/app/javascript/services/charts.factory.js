@@ -4,9 +4,13 @@ angular.module('charts')
         var charts = {};
         
         charts.chartSetup = function(chartName, numDataPoints, chartType){
-            
+            $log.info("Factory - chart name :" + chartName);
+            charts.chartName = chartName;
+            $log.info("Factory - number of data points :" + numDataPoints);
+            charts.numDataPoints = numDataPoints
+            $log.info("Factory - chart type :" + chartType);
+            charts.chartType = chartType;
         };
-        
-        
+       
         return charts;
     });
