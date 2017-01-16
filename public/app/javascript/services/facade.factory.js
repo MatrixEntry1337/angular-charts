@@ -15,10 +15,22 @@ angular.module("charts")
             facade.getNumDataPoints = function() {
                 return chartsFtry.numDataPoints;
             };
+            
+            facade.getChartName = function(){
+                return chartsFtry.chartName;
+            };
 
             /** Populate Line Chart Data **/
             facade.processLineChartData = function(labels, dataPoints) {
                 lineChartFtry.processData(labels, dataPoints);
+            };
+            
+            facade.getLineChartLabels = function(){
+                return lineChartFtry.labels;  
+            };
+            
+            facade.getLineChartData = function(){
+                return lineChartFtry.dataPoints;  
             };
 
             return facade;
