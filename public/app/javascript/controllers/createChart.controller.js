@@ -7,31 +7,31 @@ angular.module('charts')
             $log.info($scope.numDataPoints);
             $log.info($scope.chartType);
             chartsFtry.chartSetup($scope.chartName, $scope.numDataPoints, $scope.chartType);
-            dispatch(chartType);
+            dispatch($scope.chartType);
         };
         
          function dispatch(chartType){
             switch(chartType){
-                case: "Line"
-                    $location("populate-line");
+                case "Line":
+                    $location.path("populate-line");
                     break;
-                case: "Bar"
-                    $location("populate-bar");
+                case "Bar":
+                    $location.path("populate-bar");
                     break;
-                case: "Radar"
-                    $location("populate-radar");
+                case "Radar":
+                    $location.path("populate-radar");
                     break;
-                case: "Polar"
-                    $location("populate-polar");    
+                case "Polar":
+                    $location.path("populate-polar");    
                     break;
-                case: "Pie"
-                    $location("populate-pie");
+                case "Pie":
+                    $location.path("populate-pie");
                     break;
-                case: "Bubble"
-                    $location("populate-bubble");
+                case "Bubble":
+                    $location.path("populate-bubble");
                     break;
                 default:
-                    $location("/");
+                    $location.path("/");
             }
         };
         
